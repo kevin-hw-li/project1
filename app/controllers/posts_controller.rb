@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.all (:order => ":created_at DESC")
+    @posts = Post.all
   end
 
   def create
@@ -10,8 +10,10 @@ class PostsController < ApplicationController
       flash[:success] = "Your post is created."
     else
       flash[:error] = "Fatal error."
+    end
   end
 
   def clean_params
     params.require(:post).permit(:message, :image, :video)
   end
+end
