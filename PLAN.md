@@ -5,7 +5,7 @@
 #### => groups of users
 
 #### => users must sign up / sign in to access additional features such as:
--> upload images and videos <br>
+-> upload images and videos or link them from other sources <br>
 -> create events <br>
 -> send and accept friend requests
 
@@ -13,35 +13,30 @@
 
 
 # MODELS REQUIRED
-#### => User
+#### User
 -> has_many :friendships <br>
 -> has_many :friends, :through => :friendships <br>
 
+###### => COLUMNS
 -> name: string <br>
 -> email: string <br>
 -> password_digest: string
 
 
-#### => Friendship
+#### Friendship
 -> belongs_to :user <br>
 -> belongs_to :friend, :class_name => "User"
 
+###### => COLUMNS
 -> user_id: integer <br>
 -> friend_id: integer
 
 
-#### => Post
+#### Post
+###### => COLUMNS
 -> message: text <br>
 -> image: string <br>
 -> video: string
-
-
-#### => ShareItem
-
-
-## COLUMNS REQUIRED
-
-
 
 
 
