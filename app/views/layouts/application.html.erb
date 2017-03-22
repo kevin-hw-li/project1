@@ -6,9 +6,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <!-- <%= cloudinary_js_config %> -->
   </head>
 
   <body>
+    <%= link_to "Home", root_path %>
+    <%= render "includes/signin_status" %>
+    <%= render "includes/flash_notices" %>
+    <%= render "includes/signin_message" %>
     <%= yield %>
   </body>
 </html>

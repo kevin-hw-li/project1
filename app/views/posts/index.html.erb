@@ -1,1 +1,30 @@
 <h1>HELLO WORLD</h1>
+
+  <%= form_tag "/", method: "post" do %>
+
+    <% if @current_user %>
+    <p>
+      <label>Message</label>
+      <input type="text" name="message"/>
+    </p>
+    <p>
+      <label>Image URL</label>
+      <input type="text" name="image"/>
+    </p>
+    <p>
+      <label>Youtube URL</label>
+      <input type="text" name="video"/>
+    </p>
+    <p>
+      <input type="submit" value="Post"/>
+    </p>
+    <% end %>
+
+  <% end %>
+
+  <% @posts.each do |p| %>
+    <p><%= p.message %></p>
+    <img src="<%= p.image %>"/>
+    <p><%= raw(youtube_embed("#{p.video}")) %></p>
+    <p><%= "posted #{time_ago_in_words(p.created_at.in_time_zone("Sydney"))} ago by " %> <b><%= p.username %></b></p>
+  <%end%>
