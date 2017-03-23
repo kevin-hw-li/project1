@@ -6,9 +6,6 @@ Rails.application.routes.draw do
   post "/", to: "posts#create"
 
   resources :posts, only: [:edit, :update, :destroy]
-  # get "edit", to: "posts#edit"
-  # post "post", to: "posts#update"
-  # delete "/", to: "posts#destroy"
 
   get "signup", to: "users#new"
   post "signup", to: "users#create"

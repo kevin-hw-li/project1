@@ -30,6 +30,7 @@
     <% if @current_user %>
       <% if @current_user.name == p.username %>
         <%= link_to "edit", edit_post_path(p) %>
+        <%= link_to "delete", post_path(p), method: :delete %>
       <% end %>
     <% end %>
   <% end %>
