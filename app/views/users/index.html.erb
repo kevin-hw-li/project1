@@ -1,7 +1,9 @@
-<h1>List of users</h1>
+<div class="ui main text container">
+  <h1>List of users</h1>
 
-<% @users.each do |u| %>
-  <% if u != @current_user %>
-    <p><%= u.name %> <%= link_to "add", friendships_path(:friend_id => u), :method => :post %></p>
+  <% @users.each do |u| %>
+    <% if u != @current_user %>
+      <p><%= u.name %> <%= link_to "add", friendships_path(:friend_id => u), :method => :post %></p>
+    <%end%>
   <%end%>
-<%end%>
+</div>

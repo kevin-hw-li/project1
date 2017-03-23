@@ -1,12 +1,14 @@
-<% if flash %>
-  <% flash.each do |k,v| %>
-    <div class="ui message transition <%= k.to_s %>">
-      <i class="close icon"></i>
-      <div class="header">
-        <%= k.to_s.capitalize %>
+<div class="ui main text container">
+  <% if flash %>
+    <% flash.each do |k,v| %>
+      <div class="ui message transition <%= k.to_s %>">
+        <i class="close icon"></i>
+        <div class="header">
+          <%= k.to_s.capitalize %>
+        </div>
+        <p><%= v %></p>
       </div>
-      <p><%= v %></p>
-    </div>
+    <%end%>
+    <% flash.clear %>
   <%end%>
-  <% flash.clear %>
-<%end%>
+</div>

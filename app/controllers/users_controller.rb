@@ -14,8 +14,8 @@ class UsersController < ApplicationController
       redirect_to root_path
       flash[:success] = "You have successfully signed up."
     else
-      render :new
-      flash[:error] = "Fatal error."
+      redirect_to signup_path
+      flash[:error] = "Try another Email or Username."
     end
   end
 

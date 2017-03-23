@@ -1,15 +1,17 @@
-<h1>Sign in</h1>
+<div class="ui main text container">
+  <h1>Sign in</h1>
 
-<%= form_tag "/signin", method: "post" do %>
-  <p>
-    <label>Email:</label>
-    <input type="text" name="email">
-  </p>
-  <p>
-    <label>Password:</label>
-    <input type="password" name="password">
-  </p>
-  <p>
-    <input type="submit" value="Sign in">
-  </p>
-<%end%>
+  <%= form_tag "/signin", method: "post", class: "ui form" do %>
+    <div class="field">
+      <label>Email</label>
+      <input type="text" name="email" placeholder="Email">
+    </div>
+    <div class="field">
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Password">
+    </div>
+    <p>
+      <input type="submit" value="Sign in" class="ui button orange">
+    </p>
+  <%end%>
+</div>

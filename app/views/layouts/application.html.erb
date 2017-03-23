@@ -10,10 +10,28 @@
   </head>
 
   <body>
-    <%= link_to "Home", root_path %>
-    <%= render "includes/signin_status" %>
-    <%= render "includes/flash_notices" %>
-    <%= render "includes/signin_message" %>
+    <div class="ui inverted segment orange">
+      <div class="ui inverted pointing menu orange">
+        <%= link_to "Home", root_path, class: "item home" %>
+        <% if @current_user %>
+          <%= link_to "Friends", friends_path, class: "item" %>
+        <%end%>
+        <div class="right item">
+          <% if @current_user %>
+            <%= link_to "Sign out", signout_path, method: "delete", class: "ui inverted button" %>
+          <%else%>
+            <%= link_to "Sign up", signup_path, class: "ui inverted button" %>
+            <%= link_to "Sign in", signin_path, class: "ui inverted button" %>
+          <%end%>
+        </div>
+      </div>
+    </div>
+    <% if @current_user %>
+      <p class="signin_user">Signed in as: <%= @current_user.name %></p>
+    <%end%>
+    <div>
+      <%= render "includes/flash_notices" %>
+    </div>
     <%= yield %>
   </body>
 </html>

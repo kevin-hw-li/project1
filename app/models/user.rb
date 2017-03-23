@@ -9,8 +9,5 @@ class User < ApplicationRecord
   has_many :inverse_friendships, :class_name => "Friendship", :foreign_key => "friend_id"
   has_many :inverse_friends, :through => :inverse_friendships, :source => :user
 
-  # validates :email, format: {
-  #   with: /\A.*@wdi.com\z/,
-  #   message: "invalid email address"
-  # }
+  validates_format_of :email, :with => /.+@.+\..+/i
 end

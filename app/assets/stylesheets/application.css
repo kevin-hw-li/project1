@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+
+.item {
+  font-weight: bold !important;
+}
+
+.home {
+  margin-left: 50px !important;
+}
+
+.button {
+  margin-right: 10px !important;
+}
+
+.post {
+  margin: 0 !important;
+}
+
+/*.secondary {
+  border: none !important;
+}*/
+
+.signin_user {
+  font-weight: bold !important;
+  margin-left: 89%;
+}

@@ -1,22 +1,22 @@
-<h1>HELLO WORLD</h1>
 
-  <%= form_tag "/", method: "post" do %>
+<div class="ui main text container">
+  <%= form_tag "/", method: "post", class: "ui form" do %>
 
     <% if @current_user %>
     <p>
       <label>Message</label>
-      <input type="text" name="message"/>
+      <input type="text" name="message" placeholder="What's happening?"/>
     </p>
     <p>
-      <label>Image URL</label>
-      <input type="text" name="image"/>
+      <label>Image</label>
+      <input type="text" name="image" placeholder="Add an image URL"/>
     </p>
     <p>
-      <label>Youtube URL</label>
-      <input type="text" name="video"/>
+      <label>Youtube</label>
+      <input type="text" name="video" placeholder="Add a Youtube URL"/>
     </p>
     <p>
-      <input type="submit" value="Post"/>
+      <input type="submit" value="Post" class="ui button orange"/>
     </p>
     <% end %>
 
@@ -29,8 +29,9 @@
     <p><%= "posted #{time_ago_in_words(p.created_at.in_time_zone("Sydney"))} ago by " %> <b><%= p.username %></b></p>
     <% if @current_user %>
       <% if @current_user.name == p.username %>
-        <%= link_to "edit", edit_post_path(p) %>
-        <%= link_to "delete", post_path(p), method: :delete %>
+        <%= link_to "edit", edit_post_path(p), class: "mini ui basic button orange post" %>
+        <%= link_to "delete", post_path(p), method: :delete, class: "mini ui basic button orange post" %>
       <% end %>
     <% end %>
   <% end %>
+</div>
