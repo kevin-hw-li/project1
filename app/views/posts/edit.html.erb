@@ -1,0 +1,15 @@
+<%= form_for @post do |f| %>
+<p>
+  <%= f.label :message %>
+  <%= f.text_field :message %>
+</p>
+<p>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+</p>
+<p>
+  <%= f.label :video %>
+  <%= f.text_field :video %>
+</p>
+  <%= f.submit "Edit post" %>
+<%end%>

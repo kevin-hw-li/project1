@@ -5,13 +5,13 @@
 #### => groups of users
 
 #### => users must sign up / sign in to access additional features such as:
--> upload images and videos or link them from other sources <br>
+-> upload images and videos or link them from other sources <br> [link DONE]
 -> Cloudinary -> <%= form_for(@something, :html => {:multipart => true}) do |f| %> <br>
 -> Cloudinary -> <%= f.label "Image:" %> <br>
 -> Cloudinary -> <%= f.cl_image_upload :image %> <br>
 
 -> create events <br>
--> send and accept friend requests -> probably just follow / followers now
+-> send and accept friend requests -> probably just follow / followers now [DONE]
 
 -> edit and delete posts as a user
 -> display posts of a user (like a profile page on fb)
