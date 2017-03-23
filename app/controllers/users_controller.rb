@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
 
+  def index
+    @users = User.all
+  end
+
   def new
     @user = User.new
   end
@@ -10,7 +14,7 @@ class UsersController < ApplicationController
       redirect_to root_path
       flash[:success] = "You have successfully signed up."
     else
-      # render :new
+      render :new
       flash[:error] = "Fatal error."
     end
   end

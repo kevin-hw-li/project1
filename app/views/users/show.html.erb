@@ -1,0 +1,7 @@
+<h1>Your friends</h1>
+
+<% @current_user.friends.each do |u| %>
+  <p><%= u.name %></p>
+<%end%>
+
+<%= link_to "Find Friends", users_path %>
