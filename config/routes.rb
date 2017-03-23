@@ -10,12 +10,14 @@ Rails.application.routes.draw do
 
   get "users", to: "users#index"
   get "friends", to: "users#show"
+  delete "friends", to: "friendships#destroy"
+
 
   get "signin", to: "sessions#new"
   post "signin", to: "sessions#create"
   delete "signout", to: "sessions#destroy"
 
 
-  resources :friendships
+  resources :friendships, only: [:create, :destroy]
 
 end
