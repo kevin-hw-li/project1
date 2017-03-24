@@ -27,11 +27,9 @@
       </div>
     </div>
     <% if @current_user %>
-      <p class="signin_user">Signed in as: <%= @current_user.name %></p>
+      <p class="signin_user_text">Signed in as: <%= @current_user.name %></p>
     <%end%>
-    <div>
-      <%= render "includes/flash_notices" %>
-    </div>
+    <%= render "includes/flash_notices" %>
     <%= yield %>
     <%= render "includes/footer" %>
   </body>

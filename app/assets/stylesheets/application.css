@@ -14,6 +14,10 @@
  *= require_self
  */
 
+ .ui {
+   margin: 0 !important;
+   bottom: 0 !important;
+ }
 
 .item {
   font-weight: bold !important;
@@ -36,7 +40,7 @@
   border: none !important;
 }*/
 
-.signin_user {
+.signin_user_text {
   font-weight: bold !important;
   margin-left: 90%;
 }
@@ -55,12 +59,52 @@
 }
 
 .ui.footer.segment {
-  margin: 2em 0em 0em;
+  position: fixed;
+  margin: 0;
   padding: 2em 0em;
 }
 
 .footer {
-  top: 700px;
   bottom: 0 !important;
   width: 100% !important;
+}
+
+.masthead {
+  height: 100%;
+}
+
+.segment {
+  border-radius: 0px !important;
+}
+
+.ui.inverted.header {
+  margin-top: 200px !important;
+}
+
+.signin {
+  margin-top: 20px !important;
+}
+
+.signup {
+  margin-top: 20px !important;
+}
+
+.notices {
+  /*padding-top: 10px !important;*/
+}
+
+.start {
+  color: white;
+}
+
+.start:hover {
+  color: white;
+}
+
+.ui.main.text.container.pushable {
+  margin-bottom: 100px !important;
+}
+
+.ui.piled.segment.feed {
+ margin-top: 20px !important;
 }
