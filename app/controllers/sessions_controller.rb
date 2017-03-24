@@ -9,11 +9,11 @@ class SessionsController < ApplicationController
         session[:user_id] = user.id
         redirect_to root_path
         flash[:success] = "You have successfully signed in."
-      # else
-      #   render :new
+
       end
-    # else
-    #   render :new
+    else
+      redirect_to signin_path
+      flash[:error] = "Invalid email/password."
     end
   end
 

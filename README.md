@@ -1,24 +1,30 @@
-# README
+# SOCIAL APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a social app with basic features where users can share messages, images and videos.
 
-Things you may want to cover:
+### LANGUAGES USED
 
-* Ruby version
+Ruby on rails, Javascript / jQuery, HTML, CSS
 
-* System dependencies
+### APP FEATURES AND DESCRIPTION
 
-* Configuration
+##### Register an account and sign in
 
-* Database creation
+Press 'Get started' or 'Sign up' to register a user account.
 
-* Database initialization
+Sign in after the account registration is successful.
 
-* How to run the test suite
+##### Post messages, images and videos
 
-* Services (job queues, cache servers, search engines, etc.)
+Post messages, images and videos simply by entering text or URLs into respective fields.
 
-* Deployment instructions
+You can also edit or delete you posts.
 
-* ...
+##### Friends (Follow)
+
+Click on 'Friends' at the top menu to show a list of users you are following and a list of users following you.
+
+Click on the 'Find friends' button and it will direct you to a page with a list of users which you can add as friends.
+
+
+###### Kevin

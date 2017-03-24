@@ -11,6 +11,7 @@ puts "This is some extroridinary testing data"
 
 # Post.create(message:'This is the fabulous first post.')
 # Post.create(message:'This is the fabulous second post.')
+# User.destroy_all
 
 # users = [
 #   {
