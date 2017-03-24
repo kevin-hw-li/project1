@@ -2,10 +2,10 @@
   <h1>Your friends</h1>
 
   <% @current_user.friendships.each do |friendship| %>
-    <p><%= friendship.friend.name %> <%= link_to "remove", friendship, :method => :delete %></p>
+    <p><%= friendship.friend.name %> <%= link_to "remove", friendship, :method => :delete, class: "mini ui basic button orange"%></p>
   <%end%>
 
-  <p> <%= link_to "Find Friends", users_path %> </p>
+  <p> <%= link_to "Find Friends", users_path, class: "ui button orange"%> </p>
 
   <h1>People befriended you</h1>
   <% @current_user.inverse_friends.each do |i| %>

@@ -3,7 +3,7 @@
 
   <% @users.each do |u| %>
     <% if u != @current_user %>
-      <p><%= u.name %> <%= link_to "add", friendships_path(:friend_id => u), :method => :post %></p>
+      <p><%= u.name %> <%= link_to "add", friendships_path(:friend_id => u), :method => :post, class: "mini ui basic button orange" %></p>
     <%end%>
   <%end%>
 </div>

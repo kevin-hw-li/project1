@@ -27,8 +27,9 @@
   margin-right: 10px !important;
 }
 
-.post {
+.basic {
   margin: 0 !important;
+  padding: 5px !important;
 }
 
 /*.secondary {
@@ -37,5 +38,29 @@
 
 .signin_user {
   font-weight: bold !important;
-  margin-left: 89%;
+  margin-left: 90%;
+}
+
+.date {
+  float: right !important;
+}
+
+.copyright {
+  font-size: 10px;
+  color: rgba(255,255,255,0.5)
+}
+
+.main.container {
+  margin-top: 1em;
+}
+
+.ui.footer.segment {
+  margin: 2em 0em 0em;
+  padding: 2em 0em;
+}
+
+.footer {
+  top: 700px;
+  bottom: 0 !important;
+  width: 100% !important;
 }
