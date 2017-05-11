@@ -13,5 +13,3 @@ User.destroy_all
 Post.destroy_all
 
 User.create(email: "test@test.com", name: "test", password: "password")
-Post.create(message:'This is the fabulous first post.')
-Post.create(message:'This is the fabulous second post.')
