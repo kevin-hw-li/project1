@@ -1,6 +1,7 @@
 # SOCIAL APP
 
 This is a social app with basic features where users can share messages, images and videos.
+[Press here to access the site](https://gentle-stream-15835.herokuapp.com/)
 
 ### LANGUAGES USED
 

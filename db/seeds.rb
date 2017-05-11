@@ -9,27 +9,9 @@
 
 puts "This is some extroridinary testing data"
 
-# Post.create(message:'This is the fabulous first post.')
-# Post.create(message:'This is the fabulous second post.')
-# User.destroy_all
+User.destroy_all
+Post.destroy_all
 
-# users = [
-#   {
-#     name: "super",
-#     email: "super",
-#     password_digest: "super"
-#
-#   },
-#   {
-#     name: "awesome",
-#     email: "awesome",
-#     password_digest: "awesome"
-#
-#   },
-#   {
-#     name: "fabo",
-#     email: "fabo",
-#     password_digest: "fabo"
-#
-#   }
-# ]
+User.create(email: "test@test.com", name: "test", password: "password")
+Post.create(message:'This is the fabulous first post.')
+Post.create(message:'This is the fabulous second post.')
