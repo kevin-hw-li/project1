@@ -1,7 +1,7 @@
-# SOCIAL APP
+# postSome
 
 This is a social app with basic features where users can share messages, images and videos.
-[Access](https://gentle-stream-15835.herokuapp.com/)
+[Access](https://postsome.herokuapp.com/)
 
 ### LANGUAGES USED
 
